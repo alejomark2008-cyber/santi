@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ColombiaStyle | Catálogo de Moda</title>
+<meta name="description" content="Catálogo de moda y marcas disponibles en Colombia.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="topbar">🇨🇴 Envíos a toda Colombia · Compra segura · Atención personalizada</div>
+
+<header class="navbar">
+  <a class="logo" href="#inicio">COLOMBIA<span>STYLE</span></a>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#marcas">Marcas</a>
+    <a href="#nacionales">Nacionales</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#ubicacion">Punto físico</a>
+  </nav>
+  <div class="actions">
+    <button id="searchBtn" title="Buscar">⌕</button>
+    <button id="cartBtn" title="Carrito">🛒 <b id="cartCount">0</b></button>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">CATÁLOGO DE MODA</p>
+    <h1>Encuentra tu estilo en <em>un solo lugar.</em></h1>
+    <p>Explora marcas internacionales y marcas de producción nacional. Filtra por marca y descubre rápidamente lo que buscas.</p>
+    <div class="hero-buttons">
+      <a class="btn" href="#catalogo">Ver todo el catálogo →</a>
+      <a class="btn outline" href="#marcas">Explorar marcas</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="marcas">
+  <div class="section-head">
+    <div><p class="eyebrow">EXPLORA POR MARCA</p><h2>Marcas disponibles</h2></div>
+    <button class="text-btn" data-filter="Todos">Ver todas →</button>
+  </div>
+  <p class="section-intro">Selecciona una marca para mostrar únicamente sus productos. La lista es editable para cada cliente.</p>
+  <div class="brand-grid">
+    <button class="brand-card" data-filter="Nike"><strong>Nike</strong><span>Deportivo</span></button>
+    <button class="brand-card" data-filter="Adidas"><strong>adidas</strong><span>Deportivo</span></button>
+    <button class="brand-card" data-filter="Puma"><strong>PUMA</strong><span>Deportivo</span></button>
+    <button class="brand-card" data-filter="Levi's"><strong>Levi's</strong><span>Denim</span></button>
+    <button class="brand-card" data-filter="Zara"><strong>ZARA</strong><span>Moda</span></button>
+    <button class="brand-card" data-filter="H&M"><strong>H&M</strong><span>Moda</span></button>
+    <button class="brand-card" data-filter="Skechers"><strong>Skechers</strong><span>Calzado</span></button>
+    <button class="brand-card national" data-filter="Totto"><strong>Totto</strong><span>Marca nacional</span></button>
+  </div>
+</section>
+
+<section class="national-banner" id="nacionales">
+  <div>
+    <p class="eyebrow">HECHO EN COLOMBIA</p>
+    <h2>Producción nacional</h2>
+    <p>Descubre una selección de marcas colombianas y productos de fabricación nacional.</p>
+  </div>
+  <div class="national-tags">
+    <button data-filter="Totto">Totto</button>
+    <button data-filter="Vélez">Vélez</button>
+    <button data-filter="Koaj">Koaj</button>
+    <button data-filter="Leonisa">Leonisa</button>
+    <button data-filter="Arturo Calle">Arturo Calle</button>
+    <button data-filter="Gef">Gef</button>
+    <button data-filter="Studio F">Studio F</button>
+  </div>
+</section>
+
+<section class="section" id="catalogo">
+  <div class="section-head catalog-head">
+    <div><p class="eyebrow">CATÁLOGO COMPLETO</p><h2 id="catalogTitle">Todos los productos</h2></div>
+    <div class="filters">
+      <button class="filter active" data-filter="Todos">Todos</button>
+      <button class="filter" data-filter="Mujer">Mujer</button>
+      <button class="filter" data-filter="Hombre">Hombre</button>
+      <button class="filter" data-filter="Calzado">Calzado</button>
+      <button class="filter" data-filter="Accesorios">Accesorios</button>
+    </div>
+  </div>
+  <div class="active-filter" id="activeFilter">Mostrando todo el catálogo</div>
+  <div class="products" id="productGrid"></div>
+  <div class="catalog-more"><button class="btn" id="allCatalog">Ver todo el catálogo</button></div>
+</section>
+
+<section class="location section" id="ubicacion">
+  <div class="location-card">
+    <div class="map-placeholder">📍<span>MAPA DEL PUNTO FÍSICO</span></div>
+    <div class="location-info">
+      <p class="eyebrow">VISÍTANOS</p>
+      <h2>Compra también en nuestro punto físico</h2>
+      <p class="address">📍 Calle 00 # 00-00 · Bogotá, Colombia</p>
+      <p class="muted">Reemplaza esta dirección por la dirección real del negocio. El botón abre la ruta en Google Maps.</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Calle+00+%2300-00+Bogota+Colombia" target="_blank" rel="noopener">Cómo llegar →</a>
+    </div>
+  </div>
+</section>
+
+<section class="benefits section">
+  <article><span>🚚</span><h3>Envíos nacionales</h3><p>Entrega y seguimiento de tus pedidos.</p></article>
+  <article><span>🔒</span><h3>Pago seguro</h3><p>Compra con tranquilidad.</p></article>
+  <article><span>↩️</span><h3>Cambios fáciles</h3><p>Proceso sencillo para cambios.</p></article>
+  <article><span>💬</span><h3>Atención cercana</h3><p>Estamos disponibles para ayudarte.</p></article>
+</section>
+</main>
+
+<footer>
+  <div><a class="logo" href="#inicio">COLOMBIA<span>STYLE</span></a><p>Catálogo de moda con identidad colombiana.</p></div>
+  <div><h4>Catálogo</h4><a href="#marcas">Marcas</a><a href="#nacionales">Nacionales</a><a href="#catalogo">Todos los productos</a></div>
+  <div><h4>Visítanos</h4><a href="#ubicacion">Punto físico</a><a href="#ubicacion">Cómo llegar</a></div>
+  <div><h4>Síguenos</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a></div>
+</footer>
+<div class="copyright">© 2026 ColombiaStyle · Plantilla reutilizable para emprendimientos web.</div>
+
+<div class="modal" id="cartModal">
+  <div class="modal-card">
+    <button class="close" id="closeModal">×</button>
+    <h2>Tu carrito</h2>
+    <div id="cartItems"><p>Tu carrito está vacío.</p></div>
+    <div class="cart-total">Total: <strong id="cartTotal">$0</strong></div>
+    <button class="btn full" id="checkout">Finalizar compra</button>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
